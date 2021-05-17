@@ -2,9 +2,8 @@
   "name": "reproductor_de_video",
   "version": "1.0.0",
   "description": "Proyecto del curso Profesional de JS de la Escuela de JS de Platzi",
-  "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "repository": {
     "type": "git",
@@ -15,6 +14,11 @@
   "license": "MIT",
   "homepage": "https://github.com/PabloTachella/reproductor_de_video#readme",
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "parcel": "^2.0.0-beta.2",
+    "parcel-bundler": "^1.12.5"
+  },
+  "browserslist": [
+    "last 3 chrome versions",
+    "last 3 Firefox versions"
+  ]
 }
