@@ -1,12 +1,13 @@
 import MediaPlayer from './MediaPlayer'
 import AutoPlay from './plugins/AutoPlay'
 import AutoPause from './plugins/AutoPause'
+import Ads from './plugins/ads'
 
 const video = document.querySelector('video')
 const btn_play: HTMLElement = document.querySelector('#play')
 const btn_mute: HTMLElement = document.querySelector('#mute')
 
-const player = new MediaPlayer( { element: video, plugins: [new AutoPlay(), new AutoPause()] } )
+const player = new MediaPlayer( { element: video, plugins: [new AutoPlay(), new AutoPause(), new Ads()] } )
 btn_play.onclick = () => player.togglePlay()
 btn_mute.onclick = () => player.toggleMute()
 
